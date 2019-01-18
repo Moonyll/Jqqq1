@@ -1,7 +1,14 @@
-﻿$(document).ready(function () {
-    var compteur = 0;
+﻿/*$(document).ready(function () {
+    var counter = 0;
     $('#btn').click(function () {
-    compteur ++;
-        $('#text').html('Vous avez cliqué ' + compteur + ' fois.');
+        counter ++;
+        $('#text').html('Vous avez cliqué ' + counter + ' fois.');
     }); 
+});*/
+$(document).ready(function () {
+    var counter = 0;
+    $('#btn').click(function () {
+        //counter++;
+        $('#counter').val(++counter);//pour simplifier
+    });
 });
